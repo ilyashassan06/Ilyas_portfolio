@@ -14,7 +14,7 @@ function App() {
     window.addEventListener("load", handleLoad);
 
     // Fallback — if something delays load too long
-    const timeout = setTimeout(() => setIsLoading(false), 8000);
+    const timeout = setTimeout(() => setIsLoading(false), 3000);
 
     return () => {
       window.removeEventListener("load", handleLoad);
