@@ -1,6 +1,6 @@
 // Import project images
 import project1Img from "../assets/Project1.PNG";
-import project2Img from "../assets/Project2.png";
+import project2Img from "../assets/Project2.PNG";
 
 // Import tech stack logos
 import htmlLogo from '../assets/html.png';
