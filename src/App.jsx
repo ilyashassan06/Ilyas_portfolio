@@ -1,27 +1,42 @@
-import { useState } from 'react'
-
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './Components/Navbar'
-import Home from './Pages/Home'
-import { Route, Routes } from 'react-router-dom'
+import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home";
+import Loader from "./Components/Loader";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const handleLoad = () => setIsLoading(false);
+
+    // Listen for full window load (includes images & async scripts)
+    window.addEventListener("load", handleLoad);
+
+    // Fallback — if something delays load too long
+    const timeout = setTimeout(() => setIsLoading(false), 8000);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+      clearTimeout(timeout);
+    };
+  }, []);
 
   return (
-    <div className="w-[100%] h-[100%] flex flex-col  ">
-       {/* Navbar will be shown on every page */}
-      <Navbar/>
-
-      {/* Page content changes here */}
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
-      </Routes>
+    <div className="w-full h-full flex flex-col relative">
+      {isLoading && <Loader />}
+      {!isLoading && (
+        <>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} /> */}
+          </Routes>
+        </>
+      )}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
