@@ -5,7 +5,7 @@ import { easeInOut,} from "motion/react"
 
 function RecentWork() {
   return (
-    <div className="flex gap-5 px-5  flex-col items-center  mt-6  pb-8 w-[92%] md:w-[90%] overflow-hidden  ">
+    <div id='About' className="flex gap-5 px-5  flex-col items-center  mt-6  pb-8 w-[92%] md:w-[90%] overflow-hidden  ">
         <h1 className="text-4xl my-4 font-bold">Recent Work</h1>
       
 
@@ -19,7 +19,7 @@ function RecentWork() {
       className="max-w-sm bg-white py-5 border border-black shadow-[4px_4px_0_0_black] rounded-lg overflow-hidden hover:shadow-[6px_6px_0_0_black] transition-all duration-300"
     >
       {/* Image Section */}
-      <div className="relative px-5 py-2">
+      <div  className="relative px-5 py-2">
         <img
           src={work.image}
           alt="Project Thumbnail"
@@ -32,7 +32,7 @@ function RecentWork() {
 
       {/* Content Section */}
       <div className="px-5">
-        <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+        <h3 className="text-2xl font-bold text-black  mb-2">
           {work.name}
         </h3>
         <p className="text-lg text-black mb-4 leading-relaxed">
@@ -41,10 +41,11 @@ function RecentWork() {
 
         {/* Button Link */}
         <a
-          href="#"
+          href={work.link}
+          target='blank'
           className="inline-flex items-center text-lg font-semibold text-black border-b-2 border-black hover:translate-x-1 transition-transform duration-300"
         >
-          Explore Project →
+          View Project →
         </a>
       </div>
     </motion.div>

@@ -15,13 +15,15 @@ const recentWorkData = [
     "A full-featured e-commerce platform that allows users to browse products, add items to their cart, and securely checkout. Built with modern UI components and responsive design for a seamless shopping experience.",
   image: project1Img,
   techStack: [htmlLogo, cssLogo, jsLogo, reactLogo,],
+  link:"https://github.com/ilyashassan06/ReactEcommerce",
 },
 {
-  name: "Expense Tracker",
+  name: "Quiz App",
   description:
     "A web application that helps users manage their finances by tracking income and expenses. Includes interactive charts, category-wise breakdowns, and persistent data storage for better budgeting.",
   image: project2Img,
   techStack: [reactLogo,],
+  link:"https://github.com/ilyashassan06/ReactQuiz",
 },
 
  
