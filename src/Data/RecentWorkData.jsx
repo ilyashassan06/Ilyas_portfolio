@@ -1,14 +1,24 @@
 // Import project images
 import project1Img from "../assets/Project1.PNG";
 import project2Img from "../assets/Project2.PNG";
+import AiResume from "../assets/Airesume.PNG";
 
 // Import tech stack logos
 import htmlLogo from '../assets/html.png';
 import cssLogo from '../assets/css.png';
 import jsLogo from '../assets/javascript.png';
 import reactLogo from '../assets/react.png';
+import tailwind from '../assets/tailwind.png';
+import firebase from '../assets/firebase.png';
 
 const recentWorkData = [
+  {
+  name: "Ai Resume Analyzer",
+  description:
+    "A smart web app built with React that uses AI to evaluate resumes, score them for ATS compatibility, and suggest improvements. Designed with a modern, responsive UI and deployed on Vercel.",
+  image: AiResume,
+  techStack: [htmlLogo, cssLogo, jsLogo, reactLogo,tailwind,firebase],
+  link:"https://ai-resume-analyzer-iota-seven.vercel.app/login",},
   {
   name: "Ecom Website",
   description:

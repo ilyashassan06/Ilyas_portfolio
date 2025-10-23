@@ -3,6 +3,8 @@ import htmlLogo from '../assets/html.png';
 import cssLogo from '../assets/css.png';
 import jsLogo from '../assets/javascript.png';
 import reactLogo from '../assets/react.png';
+import firebase from '../assets/firebase.png';
+import tailwind from '../assets/tailwind.png';
 
 const skillsData = [
   {
@@ -23,7 +25,11 @@ const skillsData = [
   },
   {
     name: 'Tailwind CSS',
-    image: reactLogo,
+    image: tailwind,
+  },
+  {
+    name: 'FireBase',
+    image: firebase,
   },
   // Add more skills as needed
 ];

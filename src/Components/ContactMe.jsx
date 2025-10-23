@@ -19,7 +19,7 @@ function ContactMe() {
 
 
   return (
-    <div className="flex gap-5 px-5  flex-col overflow-hidden items-center  mt-6  pb-8 w-[92%] md:w-[90%]" >
+    <div id="contact" className="flex gap-5 px-5  flex-col overflow-hidden items-center  mt-6  pb-8 w-[92%] md:w-[90%]" >
 
        <div className="w-full mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         

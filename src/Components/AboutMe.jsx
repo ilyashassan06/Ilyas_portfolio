@@ -5,7 +5,7 @@ import { motion } from "framer-motion"; // fixed import
 
 function AboutMe() {
   return (
-    <div className="flex gap-10 justify-center flex-col md:flex-row mt-10 border-b-2 pb-8 w-[92%] md:w-[90%]">
+    <div id='about' className="flex gap-10 justify-center flex-col md:flex-row mt-10 border-b-2 pb-8 w-[92%] md:w-[90%]">
       {/* ✅ Left Section (Image) */}
       <motion.div 
         initial={{ opacity: 0, x: -100, scale: 0.9 }}
@@ -47,7 +47,7 @@ function AboutMe() {
           meaningful.
         </p>
 
-        <div className="w-full">
+        <div id='skills' className="w-full">
           <h1 className="border-b-2 inline text-4xl sm:text-5xl font-sans font-bold">Skills</h1>
           <div className="w-full flex flex-wrap items-stretch gap-4 mt-6">
             {skillsData.map((skill, index) => (
