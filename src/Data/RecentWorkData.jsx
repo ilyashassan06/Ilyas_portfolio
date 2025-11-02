@@ -25,7 +25,7 @@ const recentWorkData = [
     "A fully responsive and performance-optimized tech blogging platform built for a client in the IT space. I developed this website from scratch using modern front-end technologies, ensuring a seamless user experience across devices. The platform features custom blog templates, fast-loading pages, and an intuitive content management flow.",
   image: project2Img,
   techStack: [reactLogo,],
-  link:"TrickyWorlds.com",
+  link:"https://trickyworlds.com",
 },
 
   {
