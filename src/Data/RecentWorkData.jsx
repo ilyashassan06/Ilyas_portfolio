@@ -20,6 +20,15 @@ const recentWorkData = [
   techStack: [htmlLogo, cssLogo, jsLogo, reactLogo,tailwind,firebase],
   link:"https://ai-resume-analyzer-iota-seven.vercel.app/login",},
   {
+  name: "Tricky Worlds",
+  description:
+    "A fully responsive and performance-optimized tech blogging platform built for a client in the IT space. I developed this website from scratch using modern front-end technologies, ensuring a seamless user experience across devices. The platform features custom blog templates, fast-loading pages, and an intuitive content management flow.",
+  image: project2Img,
+  techStack: [reactLogo,],
+  link:"https://github.com/ilyashassan06/ReactQuiz",
+},
+
+  {
   name: "Ecom Website",
   description:
     "A full-featured e-commerce platform that allows users to browse products, add items to their cart, and securely checkout. Built with modern UI components and responsive design for a seamless shopping experience.",
