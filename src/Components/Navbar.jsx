@@ -22,7 +22,7 @@ function Navbar() {
     transition={{
       duration:.7,
     }}
-    className="w-full  h-16 px-4 flex justify-between items-center relative z-50">
+    className="w-full  h-16 px-4 md:px-19 flex justify-between items-center relative z-50">
       {/* Left Logo */}
       <Link to="/">
   <div className="flex gap-2 items-center cursor-pointer">
