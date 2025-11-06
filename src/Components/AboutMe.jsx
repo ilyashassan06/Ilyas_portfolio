@@ -29,14 +29,12 @@ function AboutMe() {
         viewport={{ once: true, amount: 0.3 }}
         className="flex flex-col gap-4 w-full md:w-[75%] justify-center mx-auto"
       >
-
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-snug w-full">
           <span className="font-titlemain text-4xl sm:text-5xl md:text-6xl">
             React Developer{" "}
           </span>
           — I fix your UI before your users notice.
         </h1>
-
         <p className="text-gray-600 text-lg sm:text-xl md:text-[18px] leading-relaxed">
           Hi, I'm <span className="font-semibold">Ilyas Hassan</span>, a
           frontend developer with a passion for clean UI and smooth user

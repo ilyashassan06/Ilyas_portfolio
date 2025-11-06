@@ -13,7 +13,7 @@ function MyExperience() {
               index % 2 === 0 ? { opacity: 0, x: "-5%" } : { opacity: 0, x:" 5%" }
             }
             whileHover={{scale:1.03}}
-            whileInView={index % 2 === 0 ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 } }
             transition={{ duration: 0.8 }}
              viewport={{ once: true, amount: 0.3 }}   
             key={index}

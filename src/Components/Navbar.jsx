@@ -73,9 +73,11 @@ function Navbar() {
 </div>
 
       {/* Resume Button (Desktop Only) */}
-      <button className="hidden md:block rounded bg-black px-5 h-10 text-white font-main">
+      <a href="/Resume.pdf" download>
+        <button className="hidden md:block rounded bg-black px-5 h-10 text-white font-main">
         Resume
       </button>
+      </a>
 
       {/* Mobile Hamburger */}
       <div className="md:hidden">
