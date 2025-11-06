@@ -24,10 +24,12 @@ function Navbar() {
     }}
     className="w-full  h-16 px-4 flex justify-between items-center relative z-50">
       {/* Left Logo */}
-      <div className="flex gap-2 items-center">
-        <img src={Logo} alt="Logo" className="h-12 w-12" />
-        <span className="text-2xl font-bold font-Logo">Ilyas Hassan</span>
-      </div>
+      <Link to="/">
+  <div className="flex gap-2 items-center cursor-pointer">
+    <img src={Logo} alt="Logo" className="h-12 w-12" />
+    <span className="text-2xl font-bold font-Logo">Ilyas Hassan</span>
+  </div>
+</Link>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-10 text-[18px] font-main font-bold">
