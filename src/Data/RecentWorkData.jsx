@@ -10,6 +10,7 @@ import jsLogo from '../assets/javascript.png';
 import reactLogo from '../assets/react.png';
 import tailwind from '../assets/tailwind.png';
 import firebase from '../assets/firebase.png';
+import Blogverse from '../assets//Blogverse1.PNG';
 
 const recentWorkData = [
   {
@@ -18,7 +19,15 @@ const recentWorkData = [
     "A smart web app built with React that uses AI to evaluate resumes, score them for ATS compatibility, and suggest improvements. Designed with a modern, responsive UI and deployed on Vercel.",
   image: AiResume,
   techStack: [htmlLogo, cssLogo, jsLogo, reactLogo,tailwind,firebase],
-  link:"https://ai-resume-analyzer-iota-seven.vercel.app/login",},
+  link:"https://ai-resume-analyzer-iota-seven.vercel.app/login"},
+  
+  {
+  name: "Single user blog website",
+  description:
+    "A single user blog website build in react with multiple tech stacks used consisting multiple fetures like authentication , add blog , edit blog,delete blog built with react and tech stacks like firebase,redux toolkit,etc",
+  image:Blogverse,
+  techStack: [htmlLogo, cssLogo, jsLogo, reactLogo,tailwind,firebase],
+  link:"https://bb-log-verse.vercel.app/"},
   {
   name: "Tricky Worlds",
   description:
