@@ -165,6 +165,26 @@ useEffect(() => {
             ))}
           </div>
         </div>
+       <Link
+  to="/"
+  className="fixed bottom-8 right-8 group z-50"
+>
+  {/* Glow */}
+  <div className="absolute inset-0 bg-violet-500/30 blur-xl rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
+
+  <button className="relative flex items-center gap-3 px-6 py-3 rounded-2xl border border-zinc-700 bg-zinc-900/90 backdrop-blur-xl text-white font-medium overflow-hidden transition-all duration-300 hover:border-violet-500/50 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(139,92,246,0.35)]">
+    
+    {/* Gradient Hover Layer */}
+    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-violet-500/10 via-transparent to-yellow-400/10" />
+
+    {/* Text */}
+    <span className="relative z-10 flex items-center gap-2">
+      Go to Home
+      
+      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+    </span>
+  </button>
+</Link>
       </section>
     </div>
   );

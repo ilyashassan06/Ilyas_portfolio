@@ -10,7 +10,7 @@ const projects = [
     tech: ['React', 'Html', 'CSS', 'Tailwind', 'Javascript'],
     color: '#00E5FF',
     featured: true,
-    links: { live: '#', github: '#' },
+    links: { live: 'https://ai-resume-analyzer-iota-seven.vercel.app/Home', github: 'https://github.com/ilyashassan06/AiResumeAnalyzer' },
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const projects = [
     tech: ['React', 'Html', 'CSS', 'Tailwind', 'Javascript','Firebase','Context APi'],
     color: '#FFB800',
     featured: true,
-    links: { live: '#', github: '#' },
+    links: { live: 'https://deal-kart.vercel.app/', github: 'https://github.com/ilyashassan06/DealKart' },
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const projects = [
     tech: ['React', 'Html', 'CSS', 'Tailwind', 'Javascript','Context APi'],
     color: '#9F7AEA',
     featured: false,
-    links: { live: '#', github: '#' },
+    links: { live: 'https://tool-verse-silk.vercel.app/', github: 'https://github.com/ilyashassan06/ToolVerse' },
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const projects = [
 ],
     color: '#48BB78',
     featured: false,
-    links: { live: '#', github: '#' },
+    links: { live: 'https://bb-log-verse.vercel.app/', github: 'https://github.com/ilyashassan06/BLogVerse' },
   },
   
 ]
@@ -112,6 +112,7 @@ function ProjectCard({ project }) {
       {/* Links */}
       <div className="flex gap-4">
         <a
+        target='blank'
           href={project.links.live}
           className="flex items-center gap-1.5 text-sm font-body text-accent hover:text-accentDim transition-colors group/link"
         >
@@ -119,6 +120,7 @@ function ProjectCard({ project }) {
           <span className="transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5">↗</span>
         </a>
         <a
+        target='blank'
           href={project.links.github}
           className="flex items-center gap-1.5 text-sm font-body text-textDim hover:text-text transition-colors"
         >
